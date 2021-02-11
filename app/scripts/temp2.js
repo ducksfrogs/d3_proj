@@ -16,13 +16,10 @@ rect.attr('width', '24')
     .data(dataArray)
     .attr('fill','orange')
     .attr('height', function(d){
-      return d*3;
+      return d*2;
     })
     .attr('x', function(d, i){
         console.log(d);
-         return i*25;})
-    .attr('y', function(d, i){
-      return 100 - (d*3);
-    });
+         return i*25;});
 
 console.log(rect);
